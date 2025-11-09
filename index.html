@@ -723,15 +723,15 @@
     <div class="container">
         <header class="header">
             <h1>Para Minha <span class="girlfriend-name"></span></h1>
-            <p>Uma declaração de amor criada especialmente para você ❤️</p>
+            <p>Uma declaração de amor criada especialmente para você kk ❤️</p>
         </header>
 
         <main class="love-card">
-            <h2>Minha Alma Gêmea 💕</h2>
+            <h2>Minha melhor companhia 💕</h2>
             <div class="love-message">
-                <p><span class="girlfriend-name"></span>, você é a razão do meu despertar feliz e o último pensamento antes de dormir. Desde que você chegou na minha vida, cada dia se tornou mais colorido, mais doce, mais completo.</p>
+                <p><span class="girlfriend-name"></span>, QUERIA te dar meus olhos pra tu ver como eu te enxergo, também queria te dar umas flores maas isso é complicado kk .</p>
                 <br>
-                <p>Você é minha melodia favorita, meu porto seguro, minha inspiração diária. Com você descobri que o amor verdadeiro não é apenas um sentimento, é um lar, é paz, é a certeza de que encontrei minha pessoa para sempre! ❤️</p>
+                <p>Por isso resolvi criar isso aqui espero que goste é simples mas é de coração ❤️</p>
             </div>
 
             <button class="surprise-btn" onclick="showSurprise()">
@@ -740,9 +740,9 @@
 
             <div class="special-message" id="specialMessage">
                 <h3>💖 Do Fundo Do Meu Coração 💖</h3>
-                <p><span class="girlfriend-name"></span>, você é o presente mais lindo que a vida me deu. Cada sorriso seu ilumina meu mundo, cada abraço seu me faz sentir em casa, cada "eu te amo" seu é música para minha alma.</p>
+                <p><span class="girlfriend-name"></span>, você chegou na minha vida de um jeito diferente, semm aviso e sem fazer barulho, e mesmo assim preencheu um espaço que eu nem sabia que estava vazio.</p>
                 <br>
-                <p>Obrigado(a) por ser minha companheira de sonhos, minha parceira de vida, minha melhor amiga e meu grande amor. Neste Dia dos Namorados, quero que saiba: você é tudo que sempre sonhei e muito mais! 💝</p>
+                <p>Sua companhia é daquelas que não pesa, não exige, não cansa - ela acolhe. Você é presença, é paz, é força. uma Mulher que carrega amor e coragem nos olhos. Uma mãe linda e guerreira de todos os dias 💝</p>
             </div>
         </main>
 
@@ -770,7 +770,7 @@
         <footer class="footer">
             <p>Criado com todo <span class="heart-beat">❤️</span> do universo</p>
             <p>Para a <span class="girlfriend-name"></span> mais especial do mundo! 💫</p>
-            <p>Feliz Dia dos Namorados, meu amor! 💑</p>
+            <p>Me estressa as vezes kk 💑</p>
         </footer>
     </div>
 
@@ -854,13 +854,13 @@
             // Criar múltiplas animações "TE AMO"
             const teAmoTexts = [
                 'TE AMO ❤️',
-                '💖 TE AMO MUITO 💖',
-                'EU TE AMO!',
-                '❤️ MEU AMOR ❤️',
-                'TE AMO PARA SEMPRE!',
+                '💖VOCÊ É ESPECIAL💖',
+                'PRINCESA',
+                '❤️ MARAVILHOSA ❤️',
+                'GOSTOSAAAAA!',
                 '💕 VOCÊ É TUDO 💕',
                 'MEU CORAÇÃO É SEU!',
-                '🥰 TE AMO DEMAIS 🥰'
+                '🥰 LINDA DEMAIS🥰'
             ];
             
             // Animação central principal
@@ -887,11 +887,11 @@
             document.body.appendChild(mainTeAmo);
             setTimeout(() => mainTeAmo.remove(), 4000);
 
-            // Múltiplos "TE AMO" flutuantes
+            // Múltiplos "LINDA" flutuantes
             for (let i = 0; i < 8; i++) {
                 setTimeout(() => {
-                    const teAmo = document.createElement('div');
-                    const randomText = teAmoTexts[Math.floor(Math.random() * teAmoTexts.length)];
+                    const LINDA = document.createElement('div');
+                    const randomText = LINDATexts[Math.floor(Math.random() * LINDATexts.length)];
                     teAmo.innerHTML = randomText;
                     
                     const startX = Math.random() * window.innerWidth;
@@ -906,21 +906,21 @@
                         color: ${Math.random() > 0.5 ? '#ff0040' : '#ffd700'};
                         z-index: 9998;
                         pointer-events: none;
-                        animation: te-amo-float 3s ease-out forwards;
+                        animation: LINDA-float 3s ease-out forwards;
                         text-shadow: 0 0 15px rgba(255, 0, 64, 0.8);
                         filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.6));
                     `;
                     document.body.appendChild(teAmo);
-                    setTimeout(() => teAmo.remove(), 3000);
+                    setTimeout(() => LINDA.remove(), 3000);
                 }, i * 200);
             }
 
-            // Chuva de "TE AMO" pequenos
+            // Chuva de "MARAVILHOSA" pequenos
             for (let i = 0; i < 15; i++) {
                 setTimeout(() => {
-                    const miniTeAmo = document.createElement('div');
-                    miniTeAmo.innerHTML = '💖 TE AMO';
-                    miniTeAmo.style.cssText = `
+                    const MARAVILHOSA = document.createElement('div');
+                    miniTeAmo.innerHTML = '💖 MARAVILHOSA';
+                    MARAVILHOSA.style.cssText = `
                         position: fixed;
                         left: ${Math.random() * 100}%;
                         top: -50px;
@@ -928,11 +928,11 @@
                         color: #ff0040;
                         z-index: 9997;
                         pointer-events: none;
-                        animation: te-amo-rain ${Math.random() * 3 + 2}s linear forwards;
+                        animation: MARAVILHOSA-rain ${Math.random() * 3 + 2}s linear forwards;
                         text-shadow: 0 0 10px rgba(255, 0, 64, 0.6);
                     `;
-                    document.body.appendChild(miniTeAmo);
-                    setTimeout(() => miniTeAmo.remove(), 5000);
+                    document.body.appendChild(MARAVILHOSA);
+                    setTimeout(() => MARAVILHOSA.remove(), 5000);
                 }, i * 150);
             }
 
@@ -1069,14 +1069,14 @@
 
         // Sistema de notificações românticas dark
         const romanticMessages = [
-            "💖 Você é meu mundo inteiro!",
+            "💖 Você é perfeita",
             "🌹 Cada dia com você é especial!",
-            "💎 Você é meu tesouro mais precioso!",
-            "✨ Meu coração bate só por você!",
-            "🥰 Te amo mais a cada segundo!",
-            "💕 Você é minha felicidade!",
-            "🌟 Minha estrela mais brilhante!",
-            "💘 Amor da minha vida toda!"
+            "💎 Você é uma mãe maravilhosa",
+            "✨ Seu brilho é intenso!",
+            "🥰 A mais cheirosa do mundo!",
+            "💕 Você não tem noção o quanto te admiro!",
+            "🌟 Uma maravilha de mulher!",
+            "💘 GOSTSAAAAAAAAAAA k!"
         ];
 
         function showNotification() {
@@ -1393,3 +1393,4 @@
 </body>
 
 </html>
+
