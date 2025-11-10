@@ -31,6 +31,33 @@
             box-sizing: border-box;
         }
 
+        <div id="lightbox">
+    <img id="lightbox-img" src="">
+</div>
+
+<script defer>
+document.querySelectorAll('section.photo-gallery img').forEach(img => {
+    img.style.cursor = 'pointer';
+    img.addEventListener('click', () => {
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+
+        lightboxImg.src = img.src;
+
+        // Reativa animação
+        lightboxImg.style.animation = 'none';
+        void lightboxImg.offsetWidth;
+        lightboxImg.style.animation = 'zoomIn 0.3s ease forwards';
+
+        lightbox.style.display = 'flex';
+    });
+});
+
+document.getElementById('lightbox').addEventListener('click', () => {
+    document.getElementById('lightbox').style.display = 'none';
+});
+
+</script>
         body {
             font-family: 'Poppins', sans-serif;
             background: linear-gradient(135deg, var(--primary-black) 0%, var(--secondary-black) 50%, #2a0a0a 100%);
@@ -703,31 +730,7 @@
             from { opacity: 0; transform: translateY(50px); }
             to { opacity: 1; transform: translateY(0); }
         }
-        <div id="lightbox">
-    <img id="lightbox-img" src="">
-</div>
-
-<script>
-document.querySelectorAll('.photo-frame img').forEach(img => {
-    img.addEventListener('click', () => {
-        const lightbox = document.getElementById('lightbox');
-        const lightboxImg = document.getElementById('lightbox-img');
-
-        lightboxImg.src = img.src;
-
-        // Remove animação antiga e força reativar
-        lightboxImg.style.animation = 'none';
-        void lightboxImg.offsetWidth;
-        lightboxImg.style.animation = 'zoomIn 0.3s ease forwards';
-
-        lightbox.style.display = 'flex';
-    });
-});
-
-document.getElementById('lightbox').addEventListener('click', () => {
-    document.getElementById('lightbox').style.display = 'none';
-});
-</script>
+        
 
     </style>
 </head>
@@ -793,7 +796,7 @@ document.getElementById('lightbox').addEventListener('click', () => {
             </div>
         </section>
 
-        #lightbox {
+      #lightbox {
     display: none;
     position: fixed;
     inset: 0;
@@ -810,7 +813,6 @@ document.getElementById('lightbox').addEventListener('click', () => {
     animation: zoomIn 0.3s ease forwards;
 }
 
-/* Animação */
 @keyframes zoomIn {
     from {
         transform: scale(0.6);
@@ -821,7 +823,6 @@ document.getElementById('lightbox').addEventListener('click', () => {
         opacity: 1;
     }
 }
-
         <footer class="footer">
             <p>Criado com todo <span class="heart-beat">❤️</span> do universo</p>
             <p>Pra você <span class="girlfriend-name"></span> obrigado por tudo! 💫</p>
@@ -1448,6 +1449,7 @@ document.getElementById('lightbox').addEventListener('click', () => {
 </body>
 
 </html>
+
 
 
 
