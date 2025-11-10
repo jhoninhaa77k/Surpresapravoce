@@ -31,32 +31,7 @@
             box-sizing: border-box;
         }
 
-        <div id="lightbox">
-    <img id="lightbox-img" src="">
-</div>
-
-<script defer>
-document.querySelectorAll('section.photo-gallery img').forEach(img => {
-    img.style.cursor = 'pointer';
-    img.addEventListener('click', () => {
-        const lightbox = document.getElementById('lightbox');
-        const lightboxImg = document.getElementById('lightbox-img');
-
-        lightboxImg.src = img.src;
-
-        // Reativa animação
-        lightboxImg.style.animation = 'none';
-        void lightboxImg.offsetWidth;
-        lightboxImg.style.animation = 'zoomIn 0.3s ease forwards';
-
-        lightbox.style.display = 'flex';
-    });
-});
-
-document.getElementById('lightbox').addEventListener('click', () => {
-    document.getElementById('lightbox').style.display = 'none';
-});
-
+ 
 </script>
         body {
             font-family: 'Poppins', sans-serif;
@@ -1463,6 +1438,7 @@ document.getElementById('lightbox').addEventListener('click', () => {
 </body>
 
 </html>
+
 
 
 
