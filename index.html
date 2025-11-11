@@ -747,14 +747,7 @@
                 <p>Por isso resolvi criar isso aqui espero que goste é simples mas é de coração ❤️</p>
             </div>
 
-           <button id="openSurpresa" class="surprise-btn" onclick="irParaSurpresa()">
-   ☀️ Uma Surpresa Especial Para Você ☀️
-</button>
-<script>
-  function irParaSurpresa(){ window.location.href = "Surpresa.html"; }
-</script>
-
-
+           
             <div class="special-message" id="specialMessage">
                 <h3>💖 Do Fundo Do Meu Coração 💖</h3>
                 <p><span class="girlfriend-name"></span>, você chegou na minha vida de um jeito diferente, sem aviso e sem fazer barulho, e mesmo assim preencheu um espaço que eu nem sabia que estava vazio.</p>
@@ -783,7 +776,9 @@
                 <img src="./img/6.jpeg" alt="Para sempre" onerror="this.style.display='none'; this.parentNode.innerHTML='🥰<br><small>Foto 6</small>';">
             </div>
         </section>
-
+     <button class="surprise-btn" onclick="showSurprise()">
+        ☀️ Uma Surpresa Especial Para Você ☀️
+            </button>
   
         <footer class="footer">
             <p>Criado com todo <span class="heart-beat">❤️</span> do universo</p>
@@ -791,9 +786,13 @@
             <p>Eu adimiro o que você é, e o que você vence mesmo quando ninguém vê. Obrigado por existir desse jeito tão ÚNICO🥰</p>
         </footer>
     </div>
-<a href="Surpresa.html" class="surprise-btn" target="_blank">
-  Clique aqui para continuar 💗
-</a>
+<button id="openSurpresa" class="surprise-btn" onclick="irParaSurpresa()">
+  Clique aqui para continuar 🥰
+</button>
+<script>
+  function irParaSurpresa(){ window.location.href = "Surpresa.html"; }
+</script>
+
 
     <script>
         // Cursor personalizado
@@ -1414,6 +1413,7 @@
 </body>
 
 </html>
+
 
 
 
